@@ -1,8 +1,11 @@
-INSERT INTO test (name) VALUES
-('Monday'),
-('Tuesday'),
-('Wednesday'),
-('Thursday'),
-('Friday'),
-('Saturday'),
-('Sunday');
+INSERT INTO products (name, image, description, price, rating, featured) VALUES
+('Mace Windu Purple Lightsaber', 'https://wallpaperaccess.com/full/4023645.jpg', 'Wieled by the second baddest Jedi in the universe who chose a purple lightsaber to standout amonst his peers', 5000000, 4, true ),
+('Kyojuro Rengoku Nichirin Katana', 'https://m.media-amazon.com/images/I/71qo+T5iyCS._AC_SY679_.jpg', 'Made from scarlet ore and etched with the words Destroyer of Demons on the side', 30000, 2, true),
+('Tengen Uzui Dual Nichirin Cleavers', 'https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F02%2Fbandai-life-size-replica-of-demon-slayer-tengen-uzuis-swords-release-info-001.jpg?q=75&w=750&cbr=1&fit=max', 'Flamboyant set of gigantic Nichirin cleavers that are amber in color and held together at the hilt by a metal chain resembling nunchucks', 40000, 2, true),
+('Cloud Buster Sword', 'https://external-preview.redd.it/fAHLBmJEAgOygqm3yS8qKiOnKgH0mWF5csJnB9vRZYE.jpg?width=960&crop=smart&auto=webp&s=cad9729159e4ec7464ecff214d959633eeee9323', 'a gargantuan broadsword held by one who saved the world', 450000, 3, true),
+('Sephiroth Masamune Odachi', 'https://static.wixstatic.com/media/acae3a_98545f831f3a46c4b9bdea7de079d62c.jpg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/acae3a_98545f831f3a46c4b9bdea7de079d62c.webp', 'A odachi blade that is 68 inches long named after the famous swordsmith Masamune and held by one who seeked to destroy the world', 350000, 3, false),
+('Zeus Lightning Bolt', 'https://i.pinimg.com/564x/53/ad/24/53ad24e965ab63d742faee9b22e0820f.jpg', 'Said to be the most powerful and feared weapon on Earth and in the Heavens', 1000000000, 5, true),
+('The Trident of Poseidon', 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ_1uKWXdqQyl4Fne8D61TUk08lVwWpBlqLe7S0HYm0Vijz3yYWrFRNaiNrXzL-__mFH6ypm0TY64kvQVOPe3a_w83GtS6eHw&usqp=CAY', 'Said to manipulate the water, entire oceans, and control sea life plus blacken the skies or clear them', 800000000, 5, true),
+('Sun Wukong Ruyi Jingu Bang', 'https://cdnb.artstation.com/p/assets/images/images/041/496/115/large/fujiwara-takumi0930-tbrender-001.jpg?1631851399', 'Also known as The Compliant Golden-Hooped Rod and is deceptively but monstrously heavy plus its able to grow on command to what the owner says and is capable of injuring and even killing almost all gods', 900000000, 5, true),
+('Thors Mjölnir', 'https://ae01.alicdn.com/kf/HTB1BoZ7XiYrK1Rjy0Fdq6ACvVXau/1-1-Scale-Full-Metal-Thor-Hammer-Mjolnir-1-1-Replica-Thor-Custom-Cosplay-Hammer-Collection.jpg_Q90.jpg_.webp', 'is depicted as one of the most fearsome and powerful weapons, capable of leveling mountains, killing giants in a single blow, and shoot celestial bolts of lightning that can even harm gods, including ones as powerful as Zeus or Cronus', 950000000, 5, true),
+('King Arthurs Excalibur', 'https://cdn11.bigcommerce.com/s-3cqxcmkgmq/images/stencil/640w/products/12683/39555/king-arthur-excalibur-gold-damascus-steel-medieval-sword_1__64439.1587827421.jpg?c=1', 'The Sword of Promised Victory said to have been forged by Merlin and the king of the fae, Oberon. Its forging involved the blood of seven dragons, whom wielded fire that burned hotter than brimstone, and melded the fiery blood with Empyrean Steel which was believed to have been gifted to them by archangel Gabriel', 100000, 3, true);

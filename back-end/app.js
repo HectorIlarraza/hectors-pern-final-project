@@ -1,6 +1,7 @@
 // DEPENDENCIES
 const cors = require("cors");
 const express = require("express");
+const productController = require("./controllers/productController.js");
 
 // CONFIGURATION
 const app = express();
@@ -11,26 +12,16 @@ app.use(express.json()); // Parse incoming JSON
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("Hello, world!");
+  res.send("Welcome to Gilameshs Other-Worldly Arms Shop!");
 });
 
-/////////////////////////////////////
-// REMOVE AFTER SUCCESSFUL DEPLOYMENT
-/////////////////////////////////////
-const db = require("./db/dbConfig.js");
+// Products ROUTES
+app.use("/products", productController);
 
-app.get("/test", async (req, res) => {
-  try {
-    const allDays = await db.any("SELECT * FROM test");
-    res.json(allDays);
-  } catch (err) {
-    res.json(err);
-  }
+// 404 PAGE
+app.get("*", (req,res)=>{
+  res.status(404).send("Page Not Found!")
 });
-
-/////////////////////////////////////
-// REMOVE AFTER SUCCESSFUL DEPLOYMENT
-/////////////////////////////////////
 
 // EXPORT
 module.exports = app;

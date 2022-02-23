@@ -3,6 +3,10 @@
 - select `use this template`
 - clone this repo
 
+## Deployed Links
+https://nervous-noether-90eab5.netlify.app/
+https://hi-cta-be.herokuapp.com/
+
 ## Getting Started
 
 ### Project Structure

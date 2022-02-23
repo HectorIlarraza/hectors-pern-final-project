@@ -1,6 +1,11 @@
-DROP TABLE IF EXISTS test;
+DROP TABLE IF EXISTS products;
 
-CREATE TABLE test (
+CREATE TABLE products (
     id SERIAL PRIMARY KEY, 
-    name TEXT
+    name TEXT,
+    image TEXT,
+    description TEXT,
+    price INTEGER DEFAULT 0,
+    rating INTEGER DEFAULT 0,
+    featured BOOLEAN
 );
