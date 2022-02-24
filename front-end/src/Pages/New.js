@@ -1,8 +1,9 @@
-import ProductNew from "../Components/ProductNew.js";
+import ProductNew from "../components/ProductNew.js";
 
 function New() {
   return (
     <div>
+      <h2>New Weapon Form</h2>
         <ProductNew />
     </div>
   );

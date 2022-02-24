@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import Product from "./Product.js";
+import { Grommet, Box, Grid } from "grommet";
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -19,20 +19,17 @@ function Products() {
     }, []);
 
   return (
-    <div className="Products">
-        <article>
-        {products.map((product) => {
+    <Grommet full className="Products">
+      <Box>
+        <Grid gap="large" rows="large" columns={{ count: 'fit', size: ['small', 'medium'] }} className="Product">
+          {products.map((product) => {
             return (
-            <div className="Product" key={product.id}>
-                <Link to={`/products/${product.id}`}>
-                    <h4>{product.name}</h4>
-                    <Product product={product} />
-                </Link>
-            </div>
-            );
-        })}
-        </article>
-    </div>
+              <Product product={product} key={product.id}/>
+              );
+            })}
+        </Grid>
+      </Box>
+    </Grommet>
   )
 }
 

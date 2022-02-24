@@ -1,7 +1,10 @@
+import ProductLogin from "../components/ProductLogin.js"
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <ProductLogin />
+    </div>
   );
 }
 
