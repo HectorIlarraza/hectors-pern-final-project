@@ -9,7 +9,6 @@ import {
   FormField,
   Grommet,
   RangeInput,
-
   TextArea,
   TextInput,
 } from 'grommet';

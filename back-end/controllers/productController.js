@@ -41,10 +41,11 @@ products.post("/", async (req,res)=>{
     // console.log(body)
     try{
         const createdProduct = await createProduct(body)
+        console.log(createdProduct)
         if(createdProduct.id){
             res.status(200).json({success: true, payload: createdProduct})
         }else{
-            res.status(422).json({success: false, payload: "Must include name field"})
+            res.status(422).json({success: false, payload: "Not created"})
         }
     }catch(err){
         console.log(err)
