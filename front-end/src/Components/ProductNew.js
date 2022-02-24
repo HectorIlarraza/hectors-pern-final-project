@@ -8,7 +8,6 @@ import {
   Form,
   FormField,
   Grommet,
-  RangeInput,
   TextArea,
   TextInput,
 } from 'grommet';
@@ -25,8 +24,8 @@ function ProductNew() {
     name: "",
     image: "",
     description: "",
-    price: "",
-    rating: "",
+    price: 0,
+    rating: 0,
     featured: false,
   });
 
@@ -37,7 +36,7 @@ function ProductNew() {
   }
 
   const handleTextChange = (e) => {
-    setProduct({ ...product, [e.target.id]: e.target.value });
+    setProduct({ ...product, [e.target.name]: e.target.value });
   };
 
   const handleCheckboxChange = () => {
@@ -66,29 +65,37 @@ function ProductNew() {
               name="name" 
               placeholder="Name of Weapon"
               onChange={handleTextChange}
+              required
             />
           </FormField>
           <FormField label="Image" name="image" >
-            <TextInput name="image" onChange={handleTextChange} placeholder="Image of Weapon"/>
+            <TextInput name="image" value={product.image} onChange={handleTextChange} />
           </FormField>
           <FormField label="Description" name="description" required>
             <TextArea name="description" placeholder="Weapon Lore" onChange={handleTextChange} />
           </FormField>
-          <FormField 
-            label="Rating" 
-            name="rating" 
-            component={RangeInput}
-            pad
-            min={0}
-            max={5}
-          >
+          <FormField label="Price" name="price" required>
+            <TextInput
+              type="number" 
+              name="price" 
+              onChange={handleTextChange}
+            />
+          </FormField>
+          <FormField label="Rating" name="rating" required>
+            <TextInput
+              type="number" 
+              name="rating" 
+              onChange={handleTextChange}
+              min={0}
+              max={5}
+              required
+            />
           </FormField>
           <FormField 
             label="Featured"
             name="featured" 
             component={CheckBox} 
             onChange={handleCheckboxChange}
-            required
           >
           </FormField>
           <Box direction="row" justify="between" margin={{ top: 'medium' }}>

@@ -25,7 +25,7 @@ const createProduct = async (product) => {
     try{
         const newProduct = await db.one(
             "INSERT INTO Products (name, image, description, price, rating, featured) VALUES($1, $2, $3, $4, $5, $6) RETURNING *",
-            [product.name, product.image, product.description, Number(product.price), Number(product.rating), product.featured]
+            [product.name, product.image, product.description, product.price, product.rating, product.featured]
         )
         return newProduct;
     }catch(err){

@@ -52,7 +52,7 @@ function ProductDetails({ addToCart }) {
         <Box className="showNavigation" direction="row" justify="between" margin={{ top: 'medium' }}>
             <Button label="Back" primary as={Link} to={"/products"} />
             <Button onClick={handleDelete} label="Delete" />
-            <Button type="submit" label="Edit" primary as={Link} to={`/products/${id}/edit`} />
+            <Button label="Edit" primary as={Link} to={`/products/${id}/edit`} />
         </Box>
     </Box>
   )

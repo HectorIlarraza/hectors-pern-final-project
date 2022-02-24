@@ -7,7 +7,6 @@ import {
   Form,
   FormField,
   Grommet,
-  RangeInput,
   TextArea,
   CheckBox,
   TextInput,
@@ -24,8 +23,8 @@ function ProductEdit() {
     name: "",
     image: "",
     description: "",
-    price: "",
-    rating: "",
+    price: 0,
+    rating: 0,
     featured: false,
   });
 
@@ -87,16 +86,25 @@ function ProductEdit() {
                 onChange={handleTextChange}
               />
             </FormField>
-            <FormField 
-              label="Rating" 
-              name="rating" 
-              value={product.rating}
-              component={RangeInput}
-              pad
-              min={0}
-              max={5}
-              required
-            >
+            <FormField label="Price" name="price" required>
+              <TextInput
+                type="number" 
+                name="price" 
+                value={product.price}
+                onChange={handleTextChange}
+              />
+            </FormField>
+            <FormField label="Rating" name="rating" required>
+              <TextInput
+                type="number" 
+                name="rating" 
+                value={product.rating}
+                onChange={handleTextChange}
+                pad
+                min={0}
+                max={5}
+                required
+              />
             </FormField>
             <FormField 
               label="Featured"
@@ -104,7 +112,6 @@ function ProductEdit() {
               value={product.featured} 
               component={CheckBox} 
               onChange={handleCheckboxChange}
-              required
             >
             </FormField>
             <Box direction="row" justify="between" margin={{ top: 'medium'}} >

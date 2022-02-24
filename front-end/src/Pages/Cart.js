@@ -1,11 +1,11 @@
-// import ShoppingCart from "../components/ShoppingCart.js"
+import ShoppingCart from "../components/ShoppingCart.js"
 
-// function List() {
-//   return (
-//     <div>
-//         {/* <ShoppingCart /> */}
-//     </div>
-//   )
-// }
+function List() {
+  return (
+    <div>
+        <ShoppingCart />
+    </div>
+  )
+}
 
-// export default List;
+export default List;

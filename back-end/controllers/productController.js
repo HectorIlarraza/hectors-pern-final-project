@@ -38,10 +38,8 @@ products.get("/:id", async (req,res)=>{
 products.post("/", async (req,res)=>{
     const { body } = req;
     body.image = validateProductImage(body);
-    // console.log(body)
     try{
         const createdProduct = await createProduct(body)
-        console.log(createdProduct)
         if(createdProduct.id){
             res.status(200).json({success: true, payload: createdProduct})
         }else{
