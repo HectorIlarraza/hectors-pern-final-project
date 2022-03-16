@@ -4,7 +4,7 @@ import { Grommet } from "grommet";
 import { Theme } from "./styles/HeaderTheme";
 
 // PAGES
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import Index from "./pages/Index";
 import Show from "./pages/Show";
 import Edit from "./pages/Edit";
@@ -37,7 +37,7 @@ function App() {
     <Grommet theme={Theme} className="App">
       <Navbar cart={cart} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/products" element={<Index addToCart={handleAddToCart} />}/>
         <Route path="/products/:id" element={<Show addToCart={handleAddToCart} />} />
         <Route path="/products/new" element={<New />} />
