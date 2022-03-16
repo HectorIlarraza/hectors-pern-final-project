@@ -1,10 +1,10 @@
-// import ProductLogin from "../components/ProductLogin.js"
+import ProductLogin from "../Components/ProductLogin.js"
 
 function Home() {
   return (
     <div>
       test
-      {/* <ProductLogin /> */}
+      <ProductLogin />
     </div>
   );
 }

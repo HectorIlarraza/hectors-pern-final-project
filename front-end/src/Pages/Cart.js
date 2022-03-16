@@ -1,4 +1,4 @@
-import ShoppingCart from "../components/ShoppingCart.js"
+import ShoppingCart from "../Components/ShoppingCart.js"
 
 function List() {
   return (

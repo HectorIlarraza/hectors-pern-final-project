@@ -1,4 +1,4 @@
-import ProductDetails from "../components/ProductDetails.js";
+import ProductDetails from "../Components/ProductDetails.js";
 
 function Show() {
   return (

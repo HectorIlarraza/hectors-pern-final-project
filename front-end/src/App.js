@@ -4,17 +4,17 @@ import { Grommet } from "grommet";
 import { Theme } from "./styles/HeaderTheme";
 
 // PAGES
-// import Home from "./pages/Home";
-import Index from "./pages/Index";
-import Show from "./pages/Show";
-import Edit from "./pages/Edit";
-import New from "./pages/New";
-import FourOFour from "./pages/FourOFour";
-import Cart from "./pages/Cart";
+import Home from "./Pages/Home";
+import Index from "./Pages/Index";
+import Show from "./Pages/Show";
+import Edit from "./Pages/Edit";
+import New from "./Pages/New";
+import FourOFour from "./Pages/FourOFour";
+import Cart from "./Pages/Cart";
 
 // COMPONENTS
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 import { useState } from "react";
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
     <Grommet theme={Theme} className="App">
       <Navbar cart={cart} />
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Home />} />
         <Route path="/products" element={<Index addToCart={handleAddToCart} />}/>
         <Route path="/products/:id" element={<Show addToCart={handleAddToCart} />} />
         <Route path="/products/new" element={<New />} />

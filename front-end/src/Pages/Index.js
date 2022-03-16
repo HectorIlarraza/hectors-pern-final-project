@@ -1,4 +1,4 @@
-import Products from "../components/Products.js";
+import Products from "../Components/Products.js";
 
 function Index() {
   return (

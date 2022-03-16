@@ -1,4 +1,4 @@
-import ProductNew from "../components/ProductNew.js";
+import ProductNew from "../Components/ProductNew.js";
 
 function New() {
   return (

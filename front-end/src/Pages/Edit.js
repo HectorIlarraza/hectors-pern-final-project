@@ -1,4 +1,4 @@
-import ProductEdit from "../components/ProductEdit.js";
+import ProductEdit from "../Components/ProductEdit.js";
 
 function Edit() {
   return (
